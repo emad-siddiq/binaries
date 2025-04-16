@@ -1,0 +1,37 @@
+{
+  "daemon": {
+    "client-port": 1000,
+    "external-port": 1001,
+    "rest-port": 1002,
+    "peer-list-url": "https://bootnodes.minaprotocol.com/networks/devnet.txt",
+    "peers": [
+  "/dns4/mina-devnet-seed.obscura.network/tcp/5001/p2p/12D3KooWGfz8BNh9BYCifPAyV9jt9P7nutmt4VXQvs94woFshqMJ",
+  "/dns4/seed-1.devnet.gcp.o1test.net/tcp/10003/p2p/12D3KooWAdgYL6hv18M3iDBdaK1dRygPivSfAfBNDzie6YqydVbs",
+  "/dns4/seed-2.devnet.gcp.o1test.net/tcp/10003/p2p/12D3KooWLjs54xHzVmMmGYb7W5RVibqbwD1co7M2ZMfPgPm7iAag",
+  "/dns4/seed-3.devnet.gcp.o1test.net/tcp/10003/p2p/12D3KooWEiGVAFC7curXWXiGZyMWnZK9h8BKr88U8D5PKV3dXciv"],
+    "genesis-ledger-dir": "/home/mina-validator/mina/genesis_ledgers/",
+    "config-directory": "/home/mina-validator/.mina-config/",
+    "config-file": "/home/mina-validator/.mina-config/daemon.json",
+    "libp2p-keypair": "/home/mina-validator/keys/libp2p",
+    "block-producer-pubkey": "B62qnZQue3oy2wbxbLLZquHwd47YZy9PHzHReZJ2LDZ9dBWY2uTFFdu",
+    "coinbase-receiver": "B62qnZQue3oy2wbxbLLZquHwd47YZy9PHzHReZJ2LDZ9dBWY2uTFFdu",
+    "log-block-creation": false,
+    "log-received-blocks": false,
+    "log-snark-work-gossip": false,
+    "log-txn-pool-gossip": false,
+    "run-snark-worker": "B62qnZQue3oy2wbxbLLZquHwd47YZy9PHzHReZJ2LDZ9dBWY2uTFFdu",
+    "snark-worker-fee": 10,
+    "snark-worker-parallelism": 1,
+    "work-reassignment-wait": 420000,
+    "work-selection": "seq"
+  },
+  "ledger": {
+    "name": "devnet",
+    "accounts": [
+      {
+        "pk": "B62qnZQue3oy2wbxbLLZquHwd47YZy9PHzHReZJ2LDZ9dBWY2uTFFdu",
+        "balance": "100000000000"
+      }
+    ]
+  }
+}
